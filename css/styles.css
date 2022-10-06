@@ -257,6 +257,7 @@ p {
 .footer {
     background: var(--footer-bcg-color);
     border-bottom: transparent;
+    padding-bottom: 60px;
 }
 .logo-footer {
     display: inline-block;
