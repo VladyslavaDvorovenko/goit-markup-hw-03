@@ -36,7 +36,6 @@ img {
     display: block;
 }
 body {
-    background-color: var(--body-bcg-color);
     color: var(--primary-text-color);
 
     font-family: Roboto, sans-serif;
@@ -58,7 +57,6 @@ body {
 .main-nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
 }
 .link {
     text-decoration: none;
@@ -113,6 +111,7 @@ body {
 }
 .address-header {
     display: flex;
+    margin-left: auto;
 
     color: var(--primary-text-color);
     font-weight: 500;
@@ -131,11 +130,15 @@ body {
 .hero {
     background-color: var(--hero-bcg-color);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
-    padding-top: 200px;
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 
     color: var(--primary-white-color);
     font-weight: 900;
@@ -154,9 +157,11 @@ section {
 }
 .advantage .list {
     display: flex;
+    gap: 30px;
 }
 .advantage .list .item {
-    margin-right: 30px;
+    flex-basis: calc((100%-90px) / 4);
+    max-width: 270px;
 }
 .advantage .list .item:last-child {
     margin-right: 0px;
@@ -211,12 +216,10 @@ section {
     line-height: 1.71;
 }
 
-.team-list .section {
-    background-color: var(--team-bcg-color);
-}
 .team-list {
     display: flex;
     justify-content: center;
+    background-color: #f5f4fa;
 }
 .team-list .card-team {
     margin-right: 30px;
@@ -226,6 +229,10 @@ section {
 }
 
 .card-team {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
     background-color: var(--primary-white-color);
     text-align: center;
 }
@@ -252,6 +259,7 @@ p {
     border-bottom: transparent;
 }
 .logo-footer {
+    display: inline-block;
     margin-top: 60px;
     margin-bottom: 20px;
 
@@ -264,21 +272,20 @@ p {
 }
 
 .address-footer {
-    margin-bottom: 60px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
 }
 .address {
     color: var(--primary-white-color);
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 .contact {
     color: var(--contact-color);
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 .contact.last {
-    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .address:focus,
@@ -287,11 +294,11 @@ p {
     color: var(--accent-color);
 }
 .button.service {
+    border: none;
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 216px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    margin-bottom: 200px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -305,7 +312,7 @@ p {
 }
 .button.portfolio {
     border-radius: 4px;
-    padding: 6px 22x;
+    padding: 6px 22px;
     min-width: 38px;
     border: transparent;
 
@@ -384,4 +391,5 @@ p {
 }
 .work-description {
     border: 1px solid #eeeeee;
+    border-top: none;
 }
