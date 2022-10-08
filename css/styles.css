@@ -64,6 +64,7 @@ body {
 
 .header {
     background-color: var(--primary-white-color);
+    border-bottom: 1px solid #ececec;
 }
 .header-nav {
     display: flex;
@@ -161,7 +162,6 @@ section {
 }
 .advantage .list .item {
     flex-basis: calc((100%-90px) / 4);
-    max-width: 270px;
 }
 .advantage .list .item:last-child {
     margin-right: 0px;
@@ -256,12 +256,11 @@ p {
 
 .footer {
     background: var(--footer-bcg-color);
-    border-bottom: transparent;
     padding-bottom: 60px;
+    padding-top: 60px;
 }
 .logo-footer {
     display: inline-block;
-    margin-top: 60px;
     margin-bottom: 20px;
 
     color: var(--primary-white-color);
@@ -279,16 +278,16 @@ p {
 }
 .address {
     color: var(--primary-white-color);
-    margin-bottom: 9px;
 }
 .contact {
     color: var(--contact-color);
+}
+.address-footer .item {
     margin-bottom: 9px;
 }
-.contact.last {
-    margin-bottom: 0;
+.address-footer .item:last-child {
+    margin-bottom: 0px;
 }
-
 .address:focus,
 .contact:hover,
 .contact:focus {
@@ -371,9 +370,7 @@ p {
     margin-bottom: 94px;
 }
 .work-title {
-    margin-top: 20px;
     margin-bottom: 4px;
-    padding-left: 24px;
 
     font-size: 18px;
     line-height: 2;
@@ -381,10 +378,6 @@ p {
     color: var(--title-text-color);
 }
 .work-text {
-    margin-top: 0;
-    margin-bottom: 20px;
-    padding-left: 24px;
-
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
@@ -393,4 +386,5 @@ p {
 .work-description {
     border: 1px solid #eeeeee;
     border-top: none;
+    padding: 20px 24px;
 }
